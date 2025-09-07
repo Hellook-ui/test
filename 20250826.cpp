@@ -7,6 +7,7 @@ int main()
 	{
 		for(int column=1;column<=row;column++)
 		{
+			if(i==100){return 0;}
 			if(row==1)
 			{
 				a[i]=1;
@@ -28,7 +29,6 @@ int main()
 				i++;
 				continue;
 			}
-			if(i==100){return 0;}
 			a[i]=a[i-row]+a[i-row+1];
 			printf("%d  ",a[i]);
 			i++;
@@ -37,3 +37,4 @@ int main()
 	}
 	return 0;
 }
+
